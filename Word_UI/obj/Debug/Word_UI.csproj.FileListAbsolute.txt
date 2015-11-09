@@ -1,0 +1,17 @@
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\bin\Debug\Word_UI.exe.config
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\bin\Debug\Word_UI.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\bin\Debug\Word_UI.pdb
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.csprojResolveAssemblyReference.cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\MainWindow.g.cs
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\App.g.cs
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI_MarkupCompile.cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI_MarkupCompile.lref
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\MainWindow.baml
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.g.resources
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.Properties.Resources.resources
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.csproj.GenerateResource.Cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\Word_UI\obj\Debug\Word_UI.pdb
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\bin\Debug\Word_UI.exe.config
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\obj\Debug\Word_UI.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\Research Topic\Word_UI\Word_UI\obj\Debug\Word_UI.pdb
