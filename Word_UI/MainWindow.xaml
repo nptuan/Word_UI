@@ -1,12 +1,104 @@
-﻿<Window x:Class="Word_UI.MainWindow"
+﻿<RibbonWindow x:Name="Word" x:Class="Word_UI.MainWindow" Icon="icon/Word.ico"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
         xmlns:local="clr-namespace:Word_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Word" Height="523.5" Width="972.5">
     <Grid>
-        
+        <ribbon:Ribbon>
+            <ribbon:Ribbon.ApplicationMenu>
+                <ribbon:RibbonApplicationMenu>
+                    <ribbon:RibbonApplicationMenuItem Header="New" ImageSource="icon/Word.png">                        
+                    </ribbon:RibbonApplicationMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Open" ImageSource="icon/Word.png">
+                    </ribbon:RibbonApplicationMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Save" ImageSource="icon/Word.png">
+                    </ribbon:RibbonApplicationMenuItem>
+                    <ribbon:RibbonApplicationSplitMenuItem Header="Save As" ImageSource="icon/Word.png">
+                        <ribbon:RibbonApplicationMenuItem Header="Rich Text Document" ImageSource="icon/Word.png">
+                        </ribbon:RibbonApplicationMenuItem>
+                        <ribbon:RibbonApplicationMenuItem Header="Office Open XML Document" ImageSource="icon/Word.png">
+                        </ribbon:RibbonApplicationMenuItem>
+                        <ribbon:RibbonApplicationMenuItem Header="Open Document Text" ImageSource="icon/Word.png">
+                        </ribbon:RibbonApplicationMenuItem>
+                    </ribbon:RibbonApplicationSplitMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Print" ImageSource="icon/Word.png">
+                    </ribbon:RibbonApplicationMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Page Setup" ImageSource="icon/Word.png">
+                    </ribbon:RibbonApplicationMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Exit" ImageSource="icon/Word.png">
+                    </ribbon:RibbonApplicationMenuItem>
+                </ribbon:RibbonApplicationMenu>
+            </ribbon:Ribbon.ApplicationMenu>
+            <RibbonTab Header="Home">
+                <RibbonGroup Header="Clipboard" Width="70">
+                    <ribbon:RibbonSplitButton Label="Paste" SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" >
+                        <StackPanel>
+
+                        </StackPanel>
+                    </ribbon:RibbonSplitButton>
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+
+                </RibbonGroup>
+                <RibbonGroup Header="Paragraph">
+                </RibbonGroup>
+                <RibbonGroup Header="Styles">
+                </RibbonGroup>
+                <RibbonGroup Header="Editing">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Insert">
+                <RibbonGroup Header="Pages">
+                </RibbonGroup>
+                <RibbonGroup Header="Table">
+                </RibbonGroup>
+                <RibbonGroup Header="Shapes">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="PageLayout">
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="References">
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Mailing">
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Review">
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="View">
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+                <RibbonGroup Header="Font">
+                </RibbonGroup>
+            </RibbonTab>
+        </ribbon:Ribbon>
     </Grid>
-</Window>
+</RibbonWindow>
