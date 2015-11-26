@@ -5,30 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
         xmlns:local="clr-namespace:Word_UI"
-        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="Word" x:Class="Word_UI.MainWindow" Icon="icon/Word.png"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="Word" x:Class="Word_UI.MainWindow"  Icon="icon/Word.png"
         mc:Ignorable="d"
-        Title="Word" Height="523.5" Width="972.5" RenderOptions.BitmapScalingMode="HighQuality" WindowStartupLocation="CenterScreen">
+        Title="Word" WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Grid>
         <Ribbon>
-            <ribbon:Ribbon.QuickAccessToolBar>  <!--Quick Access-->
+            <ribbon:Ribbon.QuickAccessToolBar>  
                 <RibbonQuickAccessToolBar>
-                    <RibbonButton Label="Save" SmallImageSource="icon/Word.png"></RibbonButton> <!--Save-->
-                    <RibbonButton Label="Undo" SmallImageSource="icon/Word.png"></RibbonButton> <!--Undo-->
-                    <RibbonButton Label="Redo" SmallImageSource="icon/Word.png"></RibbonButton> <!--Redo-->
-                    <RibbonButton Label="New" SmallImageSource="icon/Word.png"></RibbonButton>  <!--New-->
+                    <RibbonButton Label="Save" SmallImageSource="icon/Save.png"></RibbonButton> <!--Save-->
+                    <RibbonButton Label="Undo" SmallImageSource="icon/undo.png"></RibbonButton> <!--Undo-->
+                    <RibbonButton Label="Redo" SmallImageSource="icon/redo.png"></RibbonButton> <!--Redo-->
+                    <RibbonButton Label="New" SmallImageSource="icon/page_blank.png"></RibbonButton>  <!--New-->
                 </RibbonQuickAccessToolBar>
             </ribbon:Ribbon.QuickAccessToolBar>
             <Ribbon.ApplicationMenu>            <!--ApplicationMenu-->
                 <RibbonApplicationMenu>
-                    <RibbonApplicationMenuItem Header="New" ImageSource="icon/Word.png"/>           <!--New-->
-                    <RibbonApplicationMenuItem Header="Open" ImageSource="icon/Word.png"/>          <!--Open-->
-                    <RibbonApplicationMenuItem Header="Save" ImageSource="icon/Word.png"/>          <!--Save-->
-                    <RibbonApplicationSplitMenuItem Header="Save As" ImageSource="icon/Word.png">   <!--Save As-->
+                    <RibbonApplicationMenuItem Header="New" ImageSource="icon/new.png"/>           <!--New-->
+                    <RibbonApplicationMenuItem Header="Open" ImageSource="icon/open.png"/>          <!--Open-->
+                    <RibbonApplicationMenuItem Header="Save" ImageSource="icon/Save.png"/>          <!--Save-->
+                    <RibbonApplicationSplitMenuItem Header="Save As" ImageSource="icon/saveas.png">   <!--Save As-->
                         <RibbonApplicationMenuItem Header="Rich Text Document" ImageSource="icon/Word.png"/>
                         <RibbonApplicationMenuItem Header="Office Open XML Document" ImageSource="icon/Word.png"/>
                         <RibbonApplicationMenuItem Header="Open Document Text" ImageSource="icon/Word.png"/>
                     </RibbonApplicationSplitMenuItem>
-                    <RibbonApplicationMenuItem Header="Print" ImageSource="icon/Word.png"/>         <!--Print-->
+                    <RibbonApplicationMenuItem Header="Print" ImageSource="icon/print.png"/>         <!--Print-->
                     <RibbonApplicationMenuItem Header="Page Setup" ImageSource="icon/Word.png"/>    <!--Page Setup-->
                     <RibbonApplicationMenuItem Header="Exit" ImageSource="icon/Word.png"/>          <!--Exit-->
                         <RibbonApplicationMenu.AuxiliaryPaneContent>
@@ -43,14 +43,14 @@
             </Ribbon.ApplicationMenu>
             <RibbonTab Header="Home">
                 <RibbonGroup Header="Clipboard">                        <!--Clipboard-->
-                    <RibbonSplitButton Label="Paste" LargeImageSource="icon/Word.png">          <!--Paste-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Paste"/>            <!--Paste-->
+                    <RibbonSplitButton Label="Paste" LargeImageSource="icon/Paste.png">          <!--Paste-->
+                        <RibbonMenuItem ImageSource="icon/Paste.png" Header="Paste"/>            <!--Paste-->
                         <RibbonMenuItem ImageSource="icon/Word.png" Header="Paste Only Text"/>  <!--Paste Only Text-->
                         <RibbonMenuItem ImageSource="icon/Word.png" Header="Paste Special"/>    <!--Paste Special-->
                     </RibbonSplitButton>
-                    <RibbonMenuItem ImageSource="icon/Word.png" Header="Cut"/>                  <!--Cut-->
-                    <RibbonMenuItem ImageSource="icon/Word.png" Header="Copy"/>                 <!--Copy-->
-                    <RibbonMenuItem ImageSource="icon/Word.png" Header="Brush"/>                <!--Brush-->
+                    <RibbonMenuItem ImageSource="icon/cut.png" Header="Cut"/>                  <!--Cut-->
+                    <RibbonMenuItem ImageSource="icon/Copy.png" Header="Copy"/>                 <!--Copy-->
+                    <RibbonMenuItem ImageSource="icon/Brush.png" Header="Brush"/>                <!--Brush-->
                 </RibbonGroup>
                 <RibbonGroup Header="Font">
                     <!--Font-->
@@ -86,16 +86,16 @@
                                     </ribbon:RibbonGalleryCategory>
                                 </ribbon:RibbonGallery>
                             </RibbonComboBox>
-                            <RibbonButton Grid.Column="2" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Increase-->
-                            <RibbonButton Grid.Column="3" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Decrease-->
-                            <RibbonMenuButton Grid.Column="4" SmallImageSource="icon/Word.png" >                                <!--Change Case-->
+                            <RibbonButton Grid.Column="2" SmallImageSource="icon/IncreaseIndent.png"></RibbonButton>                            <!--Increase-->
+                            <RibbonButton Grid.Column="3" SmallImageSource="icon/DecreaseIndent.png"></RibbonButton>                            <!--Decrease-->
+                            <RibbonMenuButton Grid.Column="4" SmallImageSource="icon/changecase.png" >                                <!--Change Case-->
                                 <RibbonMenuItem Header="Sentence Case"/>
                                 <RibbonMenuItem Header="lowercase"/>
                                 <RibbonMenuItem Header="UPPERCASE"/>
                                 <RibbonMenuItem Header="Capitalize Each Word"/>
                                 <RibbonMenuItem Header="tOOGLE cASE"/>
                             </RibbonMenuButton>
-                            <RibbonButton Grid.Column="5" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Clear All Formatting-->
+                            <RibbonButton Grid.Column="5" SmallImageSource="icon/clearformatting.png"></RibbonButton>                            <!--Clear All Formatting-->
                         </Grid>
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
@@ -109,9 +109,9 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <RibbonButton Grid.Column="0" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Bold-->
-                            <RibbonButton Grid.Column="1" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Inclined-->
-                            <RibbonSplitButton Grid.Column="2" SmallImageSource="icon/Word.png" >                                <!--Underline-->
+                            <RibbonButton Grid.Column="0" SmallImageSource="icon/font_bold.png"></RibbonButton>                            <!--Bold-->
+                            <RibbonButton Grid.Column="1" SmallImageSource="icon/font_italic.png"></RibbonButton>                            <!--Italic-->
+                            <RibbonSplitButton Grid.Column="2" SmallImageSource="icon/font_underline.png" >                                <!--Underline-->
                                 <RibbonMenuItem Header="____________________________________"/>                                <!--Underline-->
                                 <RibbonMenuItem Header="═══════════════"/>                                <!--Double underline-->
                                 <RibbonMenuItem Header="▄▄▄▄▄▄▄▄"/>                                <!--Thick underline-->
@@ -120,74 +120,74 @@
                                 <RibbonMenuItem Header="∙ ∙ - ∙ ∙ - ∙ ∙ - ∙ ∙ - ∙ ∙"/>                                <!--Dot-Dot-Dash underline-->
                                 <RibbonMenuItem Header="~~~~~~~~~~~"/>                                <!--Wave underline-->
                                 <RibbonMenuItem Header="None"/>                                <!--None-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="More underline"/>                                <!--More underline, only header, no image-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Underline Color">                                    <!--Underline Color-->
-                                    <RibbonMenuItem ImageSource="icon/Word.png" Header="Automatic"/>
-                                </RibbonMenuItem>
+                                <RibbonMenuItem Header="More underline"/>                                <!--More underline, only header, no image-->
+                                <RibbonMenuItem Header="Underline Color">                                    <!--Underline Color-->
+                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Automatic"/>
+                            </RibbonMenuItem>
                             </RibbonSplitButton>
-                            <RibbonButton Grid.Column="3" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--StrikeThroungh-->
-                            <RibbonButton Grid.Column="4" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Subcript-->
-                            <RibbonButton Grid.Column="5" SmallImageSource="icon/Word.png"></RibbonButton>                            <!--Superscript-->
-                            <RibbonMenuButton Grid.Column="6" SmallImageSource="icon/Word.png" >                                <!--Text Effect And Typoraphy-->
+                            <RibbonButton Grid.Column="3" SmallImageSource="icon/strikethrough.png"></RibbonButton>                            <!--StrikeThrough-->
+                            <RibbonButton Grid.Column="4" SmallImageSource="icon/subscript.png"></RibbonButton>                            <!--Subcript-->
+                            <RibbonButton Grid.Column="5" SmallImageSource="icon/superscript.png"></RibbonButton>                            <!--Superscript-->
+                            <RibbonMenuButton Grid.Column="6" SmallImageSource="icon/text effect.png" >                                <!--Text Effect And Typoraphy-->
                                 <UniformGrid Columns="5" Rows="3">
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->                                      
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!----> 
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->                                      
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/text effect.png"></RibbonButton>  <!----> 
                                 </UniformGrid>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Outline"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Shadow"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Reflection"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Glow"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Number Style"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Ligatures"/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Stylistic Sets"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Outline"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Shadow"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Reflection"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Glow"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Number Style"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Ligatures"/>
+                                <RibbonMenuItem ImageSource="icon/text effect.png" Header="Stylistic Sets"/>
                             </RibbonMenuButton>
-                            <RibbonSplitButton Grid.Column="7" SmallImageSource="icon/Word.png" > <!--Text Highlight Color-->
+                            <RibbonSplitButton Grid.Column="7" SmallImageSource="icon/TextHighlight.png" > <!--Text Highlight Color-->
                                     <UniformGrid Columns="4" Rows="3">
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
-                                        <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
+                                        <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                        <!--Color Image-->
                                     </UniformGrid>
-                                    <RibbonMenuItem ImageSource="icon/Word.png" Header="No Highlight"/>                                    <!--No Highlight-->
+                                    <RibbonMenuItem Header="No Highlight"/>                                    <!--No Highlight-->
                                     </RibbonSplitButton>
-                                    <RibbonSplitButton Grid.Column="8" SmallImageSource="icon/Word.png" >                                        <!--Font Color-->
-                                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Automatic"/>
+                                    <RibbonSplitButton Grid.Column="8" SmallImageSource="icon/font_color.png" >                                        <!--Font Color-->
+                                        <RibbonMenuItem Header="Automatic"/>
                                         <UniformGrid Columns="4" Rows="3">
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
-                                            <RibbonButton SmallImageSource="icon/Word.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
+                                            <RibbonButton SmallImageSource="icon/colors.png"></RibbonButton>                                            <!--Color Image-->
                                         </UniformGrid>
-                                        <RibbonMenuItem ImageSource="icon/Word.png" Header="More Color"/>                                        <!--More Color-->
+                                        <RibbonMenuItem ImageSource="icon/colors.png" Header="More Color"/>                                        <!--More Color-->
                                     </RibbonSplitButton>
                         </Grid>
                     </Grid>
@@ -209,51 +209,51 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>                            
-                            <RibbonSplitButton Grid.Column="0" SmallImageSource="icon/Word.png">    <!--Bullets-->
+                            <RibbonSplitButton Grid.Column="0" SmallImageSource="icon/bullet.png">    <!--Bullets-->
                                 <UniformGrid Columns="6" Rows="2">
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--None Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Dot Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Bullets-->                                                                     
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/nonebullet.png"></RibbonButton>  <!--None Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/dotbullet.png"></RibbonButton>  <!--Dot Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/dotbullet1.png"></RibbonButton>  <!--Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/squarebullet.png"></RibbonButton>  <!--Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/checkbullet.png"></RibbonButton>  <!--Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/colorbullet.png"></RibbonButton>  <!--Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/4bullet.png"></RibbonButton>  <!--Bullets-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/bullet.png"></RibbonButton>  <!--Bullets-->                                                                     
                                 </UniformGrid>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Define NewBullets"/>   <!--Define NewBullets-->
+                                <RibbonMenuItem Header="Define NewBullets"/>   <!--Define NewBullets-->
                             </RibbonSplitButton> 
-                            <RibbonSplitButton Grid.Column="1" SmallImageSource="icon/Word.png">    <!--Numbering-->
+                            <RibbonSplitButton Grid.Column="1" SmallImageSource="icon/Numbering.png">    <!--Numbering-->
                                 <UniformGrid Columns="3" Rows="3">
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--None Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering-->                                      
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!--Numbering--> 
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/nonenumbering.png"></RibbonButton>  <!--None Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/1numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/2numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/3numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/4numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/5numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/6numbering.png"></RibbonButton>  <!--Numbering-->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/7numbering.png"></RibbonButton>  <!--Numbering--> 
                                 </UniformGrid>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Define New Number Format"/>   <!--Define New Number Format-->
+                                <RibbonMenuItem Header="Define New Number Format"/>   <!--Define New Number Format-->
                             </RibbonSplitButton> 
-                            <RibbonMenuButton Grid.Column="2" SmallImageSource="icon/Word.png" >           <!--Multilevel List-->
+                            <RibbonMenuButton Grid.Column="2" SmallImageSource="icon/multilevellist.png" >           <!--Multilevel List-->
                                 <UniformGrid Columns="3" Rows="3">
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->                                      
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!----> 
-                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/nonemulti.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/1multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/2multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/3multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/4multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/5multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/6multi.png"></RibbonButton>  <!---->                                      
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/7multi.png"></RibbonButton>  <!---->
+                                    <RibbonButton Width="60" Height="60" LargeImageSource="icon/7multi.png"></RibbonButton>  <!---->
                                 </UniformGrid>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Define New Multilevel List"/>           <!--Define New Multilevel List-->
-                                    <RibbonMenuItem ImageSource="icon/Word.png" Header="Define New List Style"/>            <!--Define New List Style-->
+                                <RibbonMenuItem Header="Define New Multilevel List"/>           <!--Define New Multilevel List-->
+                                    <RibbonMenuItem Header="Define New List Style"/>            <!--Define New List Style-->
                             </RibbonMenuButton>
-                            <RibbonButton Grid.Column="3" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Decrease Indent-->
-                            <RibbonButton Grid.Column="4" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Increase Indent-->
-                            <RibbonButton Grid.Column="5" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Sort-->
-                            <RibbonButton Grid.Column="6" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Show/Hide-->                         
+                            <RibbonButton Grid.Column="3" SmallImageSource="icon/DecreaseIndent.png"></RibbonButton>  <!--Decrease Indent-->
+                            <RibbonButton Grid.Column="4" SmallImageSource="icon/IncreaseIndent.png"></RibbonButton>  <!--Increase Indent-->
+                            <RibbonButton Grid.Column="5" SmallImageSource="icon/Sort.png"></RibbonButton>  <!--Sort-->
+                            <RibbonButton Grid.Column="6" SmallImageSource="icon/show_markup.png"></RibbonButton>  <!--Show/Hide-->                         
                         </Grid>
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
@@ -265,11 +265,11 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>                            
-                            <RibbonButton Grid.Column="0" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Align Left-->
-                            <RibbonButton Grid.Column="1" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Center-->
-                            <RibbonButton Grid.Column="2" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Align Right-->
-                            <RibbonButton Grid.Column="3" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Justify-->    
-                            <RibbonMenuButton Grid.Column="4" SmallImageSource="icon/Word.png" >           <!--Line and Paragraph Spacing-->
+                            <RibbonButton Grid.Column="0" SmallImageSource="icon/AlignTextLeft.png"></RibbonButton>  <!--Align Left-->
+                            <RibbonButton Grid.Column="1" SmallImageSource="icon/AlignTextCenter.png"></RibbonButton>  <!--Center-->
+                            <RibbonButton Grid.Column="2" SmallImageSource="icon/AlignTextRight.png"></RibbonButton>  <!--Align Right-->
+                            <RibbonButton Grid.Column="3" SmallImageSource="icon/AlignTextJustify.png"></RibbonButton>  <!--Justify-->
+                            <RibbonMenuButton Grid.Column="4" SmallImageSource="icon/LineAndParagraphSpacing.png" >           <!--Line and Paragraph Spacing-->
                                 <RibbonMenuItem Header="1.0"/>
                                 <RibbonMenuItem Header="1.15"/>
                                 <RibbonMenuItem Header="1.5"/>
@@ -277,168 +277,165 @@
                                 <RibbonMenuItem Header="2.5"/>
                                 <RibbonMenuItem Header="3.0"/>
                                 <RibbonMenuItem Header="Line Spacing Options..."/>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Add Space Before Paragraph"/>   <!--Add Space Before Paragraph-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Remove Space After Paragraph"/> <!--Remove Space After Paragraph-->
+                                <RibbonMenuItem ImageSource="icon/LineAndParagraphSpacing.png" Header="Add Space Before Paragraph"/>   <!--Add Space Before Paragraph-->
+                                <RibbonMenuItem ImageSource="icon/LineAndParagraphSpacing.png" Header="Remove Space After Paragraph"/> <!--Remove Space After Paragraph-->
                             </RibbonMenuButton>
-                            <RibbonSplitButton Grid.Column="5" SmallImageSource="icon/Word.png">    <!--Shading-->
+                            <RibbonSplitButton Grid.Column="5" SmallImageSource="icon/Shading.png">    <!--Shading-->
                                 <UniformGrid Columns="10" Rows="6">
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
-                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/Word.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
+                                    <RibbonButton Width="15" Height="15" SmallImageSource="icon/colors.png"></RibbonButton>  <!--Color-->
                                 </UniformGrid>
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="No Color"/>   <!--No Color-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="More Color..."/>   <!--More Color-->
+                                <RibbonMenuItem Header="No Color"/>   <!--No Color-->
+                                <RibbonMenuItem Header="More Color..."/>   <!--More Color-->
                             </RibbonSplitButton> 
-                            <RibbonSplitButton Grid.Column="6" SmallImageSource="icon/Word.png">        <!--Borders-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Bottom Border"/>    <!--Bottom Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Top Border"/>       <!--Top Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Left Border"/>      <!--Left Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Right Border"/>     <!--Right Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="No Border"/>        <!--No Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="All Border"/>       <!--All Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Inside Border"/>    <!--Inside Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Outside Border"/>   <!--Outside Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Inside Horizontal Border"/>     <!--Inside Horizontal Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Inside Vertical Border"/>       <!--Inside Vertical Border-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Horizontal Line"/>              <!--Horizontal Line-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Draw Table"/>                   <!--Draw Table-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="View Gridlines"/>               <!--View Gridlines-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Borders And Shading..."/>          <!--Borders And Shading-->
+                            <RibbonSplitButton Grid.Column="6" SmallImageSource="icon/border bottom.png">        <!--Borders-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Bottom Border"/>    <!--Bottom Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Top Border"/>       <!--Top Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Left Border"/>      <!--Left Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Right Border"/>     <!--Right Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="No Border"/>        <!--No Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="All Border"/>       <!--All Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Inside Border"/>    <!--Inside Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Outside Border"/>   <!--Outside Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Inside Horizontal Border"/>     <!--Inside Horizontal Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Inside Vertical Border"/>       <!--Inside Vertical Border-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Horizontal Line"/>              <!--Horizontal Line-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Draw Table"/>                   <!--Draw Table-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="View Gridlines"/>               <!--View Gridlines-->
+                                <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Borders And Shading..."/>          <!--Borders And Shading-->
                             </RibbonSplitButton>                           
                         </Grid>
                     </Grid>                    
                 </RibbonGroup>
                 <!--============================================-->
                 <RibbonGroup Header="Styles">
-                    <Grid Width="200">
-                        <UniformGrid Columns="6" Rows="3">
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->                                      
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!----> 
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
+                    <!--<Grid Width="200" Height="70">-->
+                        <UniformGrid Columns="6" Rows="3" Height="70">
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading1.png"></RibbonButton>  <!---->
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading2.png"></RibbonButton>  <!---->
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading3.png"></RibbonButton>  <!---->
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Intense.png"></RibbonButton>  <!---->
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/IntenseRef.png"></RibbonButton>  <!---->
+                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/style.png"></RibbonButton>  <!---->
                     </UniformGrid>
-                    </Grid>
+                    <!--</Grid>-->
                 </RibbonGroup>
                 <!--========================================================-->
                 <RibbonGroup Header="Editing">
-                    <RibbonSplitButton SmallImageSource="icon/Word.png" Label="Find">               <!--Find-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Find"/>                 <!--Find-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Advanced Find"/>        <!--Advanced Find-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Go to..."/>             <!--Go to...-->
+                    <RibbonSplitButton SmallImageSource="icon/Find.png" Label="Find">               <!--Find-->
+                        <RibbonMenuItem ImageSource="icon/Find.png" Header="Find"/>                 <!--Find-->
+                        <RibbonMenuItem ImageSource="icon/Find.png" Header="Advanced Find"/>        <!--Advanced Find-->
+                        <RibbonMenuItem ImageSource="icon/Find.png" Header="Go to..."/>             <!--Go to...-->
                     </RibbonSplitButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Replace"></RibbonButton>                                  <!--Replace-->
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Select">                                              <!--Select-->  
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Select All"/>                                           <!--Select All-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Select Objects"/>                                       <!--Select Objects-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Select All Text With Similar Formatting (No Data)"/>    <!--Select All Text With Similar Formatting (No Data)-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Selection Pane..."/>                                    <!--Selection Pane...-->
+                    <RibbonButton SmallImageSource="icon/Replace.png" Label="Replace"></RibbonButton>                                  <!--Replace-->
+                    <RibbonMenuButton SmallImageSource="icon/Select.png" Label="Select">                                              <!--Select-->  
+                        <RibbonMenuItem ImageSource="icon/selectall.png" Header="Select All"/>                                           <!--Select All-->
+                        <RibbonMenuItem ImageSource="icon/select_recipients.png" Header="Select Objects"/>                                       <!--Select-->
+                        <RibbonMenuItem ImageSource="icon/Select.png" Header="Select All Text With Similar Formatting (No Data)"/>    <!--Select-->
+                        <RibbonMenuItem ImageSource="icon/Selection_pane.png" Header="Selection Pane..."/>                                    <!--Selection Pane...-->
                     </RibbonMenuButton>  
                 </RibbonGroup>
             </RibbonTab>
             <!--============================================================-->
             <RibbonTab Header="Insert">
                 <RibbonGroup Header="Pages">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Cover Page">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="More Cover Page..."/>                   <!--More Cover Page...-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Remove Current Cover Page"/>            <!--Remove Current Cover Page-->
+                    <RibbonMenuButton LargeImageSource="icon/coverpage.png" Label="Cover Page">
+                        <RibbonMenuItem Header="More Cover Page..."/>                   <!--More Cover Page...-->
+                        <RibbonMenuItem Header="Remove Current Cover Page"/>            <!--Remove Current Cover Page-->
                     </RibbonMenuButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Blank Page"></RibbonButton>               <!--Blank Page-->
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Page Break"></RibbonButton>               <!--Page Break-->
+                    <RibbonButton LargeImageSource="icon/page_blank.png" Label="Blank Page"></RibbonButton>               <!--Blank Page-->
+                    <RibbonButton LargeImageSource="icon/page_break.png" Label="Page Break"></RibbonButton>               <!--Page Break-->
                 </RibbonGroup>
                 <RibbonGroup Header="Table">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Tables">                              <!--Tables-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Insert Table..."/>                      <!--Insert Tables-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Draw Table"/>                           <!--Draw Table-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Convert Text To Table"/>                <!--Convert Text To Table-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Excel Speadsheet"/>                     <!--Excel Speadsheet-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Quick Table"/>                          <!--Quick Table-->                        
+                    <RibbonMenuButton LargeImageSource="icon/Table.png" Label="Tables">                              <!--Tables-->
+                        <RibbonMenuItem ImageSource="icon/Table.png" Header="Insert Table..."/>                      <!--Insert Tables-->
+                        <RibbonMenuItem ImageSource="icon/Table.png" Header="Draw Table"/>                           <!--Draw Table-->
+                        <RibbonMenuItem ImageSource="icon/Table.png" Header="Convert Text To Table"/>                <!--Convert Text To Table-->
+                        <RibbonMenuItem ImageSource="icon/Table.png" Header="Excel Speadsheet"/>                     <!--Excel Speadsheet-->
+                        <RibbonMenuItem ImageSource="icon/Table.png" Header="Quick Table"/>                          <!--Quick Table-->                        
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Illustrations">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Pictures"></RibbonButton>                 <!--Pictures-->
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Online Pictures"></RibbonButton>          <!--Online Pictures-->
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Shapes">                              <!--Shapes-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Recently Used Shaped"/>                 <!--Recently Used Shaped-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Line"/>                                 <!--Line-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Rectangles"/>                           <!--Rectangles-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Basic Shapes"/>                         <!--Basic Shapes-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Block Arrow"/>                          <!--Block Arrow-->                        
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Equaltion Shapes"/>                     <!--Equaltion Shapes-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="FlowChart"/>                            <!--FlowChart-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Start And Panel"/>                      <!--Start And Panel-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Callouts"/>                             <!--Callouts-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="New Drawing Canvas"/>                   <!--New Drawing Canvas-->                        
+                    <RibbonButton LargeImageSource="icon/Pictures.png" Label="Pictures"></RibbonButton>                 <!--Pictures-->
+                    <RibbonButton LargeImageSource="icon/Pictures.png" Label="Online Pictures"></RibbonButton>          <!--Online Pictures-->
+                    <RibbonMenuButton LargeImageSource="icon/shapes.png" Label="Shapes">                              <!--Shapes-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Recently Used Shaped"/>                 <!--Recently Used Shaped-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Line"/>                                 <!--Line-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Rectangles"/>                           <!--Rectangles-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Basic Shapes"/>                         <!--Basic Shapes-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Block Arrow"/>                          <!--Block Arrow-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Equaltion Shapes"/>                     <!--Equaltion Shapes-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="FlowChart"/>                            <!--FlowChart-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Start And Panel"/>                      <!--Start And Panel-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="Callouts"/>                             <!--Callouts-->
+                        <RibbonMenuItem ImageSource="icon/shapes.png" Header="New Drawing Canvas"/>                   <!--New Drawing Canvas-->                        
                     </RibbonMenuButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="SmartArt"></RibbonButton>                 <!--SmartArt-->
-                    <RibbonButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="Chart"></RibbonButton>                    <!--Chart-->
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="Screenshot">                          <!--Screenshot-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Available Windows"/>                    <!--Available Windows-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Screen Clipping"/>                      <!--Screen Clipping-->
+                    <RibbonButton SmallImageSource="icon/SmartArt.png" LargeImageSource="icon/SmartArt.png" Label="SmartArt"></RibbonButton>                 <!--SmartArt-->
+                    <RibbonButton SmallImageSource="icon/chart.png" LargeImageSource="icon/chart.png" Label="Chart"></RibbonButton>                    <!--Chart-->
+                    <RibbonMenuButton SmallImageSource="icon/Screenshot.png" LargeImageSource="icon/Screenshot.png" Label="Screenshot">                          <!--Screenshot-->
+                        <RibbonMenuItem ImageSource="icon/Screenshot.png" Header="Available Windows"/>                    <!--Available Windows-->
+                        <RibbonMenuItem ImageSource="icon/Screenshot.png" Header="Screen Clipping"/>                      <!--Screen Clipping-->
                     </RibbonMenuButton>                    
                 </RibbonGroup>
-                <RibbonGroup Header="Add-ins" LargeImageSource="icon/Word.png">
+                <RibbonGroup Header="Add-ins">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -449,394 +446,394 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <RibbonButton Grid.Row="0" SmallImageSource="icon/Word.png" Label="Store"></RibbonButton>                   <!--Store-->
-                            <RibbonSplitButton  Grid.Row="1" SmallImageSource="icon/Word.png" Label="My Apps">                          <!--My Apps-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="Recently Used Apps"/>                               <!--Recently Used Apps-->
-                                <RibbonMenuItem ImageSource="icon/Word.png" Header="See All"/>                                          <!--See All-->
+                            <RibbonButton Grid.Row="0" SmallImageSource="icon/switch_window.png" Label="Store"></RibbonButton>                   <!--Store-->
+                            <RibbonSplitButton  Grid.Row="1" SmallImageSource="icon/switch_window.png" Label="My Apps">                          <!--My Apps-->
+                                <RibbonMenuItem ImageSource="icon/switch_window.png" Header="Recently Used Apps"/>                               <!--Recently Used Apps-->
+                                <RibbonMenuItem ImageSource="icon/switch_window.png" Header="See All"/>                                          <!--See All-->
                             </RibbonSplitButton>
                         </Grid>
-                        <RibbonButton Grid.Column="1" LargeImageSource="icon/Word.png" Label="Wikipedia"></RibbonButton>                   <!--Wikipedia-->
+                        <RibbonButton Grid.Column="1" LargeImageSource="icon/wikipedia.png" Label="Wikipedia"></RibbonButton>                   <!--Wikipedia-->
                     </Grid>
                 </RibbonGroup>
                 <RibbonGroup Header="Media" LargeImageSource="icon/Word.png">
                     <RibbonButton LargeImageSource="icon/Word.png" Label="Online Video"></RibbonButton>                   <!--Online Video-->
                 </RibbonGroup>
                 <RibbonGroup Header="Links">
-                    <RibbonButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="Hyperlink"></RibbonButton>                        <!--Hyperlink-->
-                    <RibbonButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="Bookmark"></RibbonButton>                         <!--Bookmark-->
-                    <RibbonButton SmallImageSource="icon/Word.png" LargeImageSource="icon/Word.png" Label="Cross-reference"></RibbonButton>                  <!--Cross-reference-->
+                    <RibbonButton SmallImageSource="icon/Hyperlink.png" LargeImageSource="icon/Hyperlink.png" Label="Hyperlink"></RibbonButton>                        <!--Hyperlink-->
+                    <RibbonButton SmallImageSource="icon/Bookmark.png" LargeImageSource="icon/Bookmark.png" Label="Bookmark"></RibbonButton>                         <!--Bookmark-->
+                    <RibbonButton SmallImageSource="icon/cross_reference.png" LargeImageSource="icon/cross_reference.png" Label="Cross-reference"></RibbonButton>                  <!--Cross-reference-->
                 </RibbonGroup>
-                <RibbonGroup LargeImageSource="icon/Word.png" Header="Comments">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Comment"></RibbonButton>                          <!--Comment-->
+                <RibbonGroup Header="Comments">
+                    <RibbonButton LargeImageSource="icon/comment_next.png" Label="Comment"></RibbonButton>                          <!--Comment-->
                 </RibbonGroup>
-                <RibbonGroup LargeImageSource="icon/Word.png" Header="Header And Footer">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Header">                                              <!--Header-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Blank"/>                                                <!--Blank-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Blank (Three Column)"/>                                 <!--Blank (Three Column)-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Austin"/>                                               <!--Austin-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Banded"/>                                               <!--Banded-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Facet (Event Page)"/>                                   <!--Facet (Event Page)-->                        
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="More Header From Office.com">                      <!--More Header From Office.com-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Element"/>                                          <!--Element-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Insight"/>                                          <!--Insight-->                            
+                <RibbonGroup Header="Header And Footer">
+                    <RibbonMenuButton LargeImageSource="icon/header.png" Label="Header">                                              <!--Header-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Blank"/>                                                <!--Blank-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Blank (Three Column)"/>                                 <!--Blank (Three Column)-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Austin"/>                                               <!--Austin-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Banded"/>                                               <!--Banded-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Facet (Event Page)"/>                                   <!--Facet (Event Page)-->
+                        <RibbonSplitMenuItem ImageSource="icon/header.png" Header="More Header From Office.com">                      <!--More Header From Office.com-->
+                            <RibbonMenuItem ImageSource="icon/header.png" Header="Element"/>                                          <!--Element-->
+                            <RibbonMenuItem ImageSource="icon/header.png" Header="Insight"/>                                          <!--Insight-->                            
                         </RibbonSplitMenuItem>
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Exit Header"/>                                          <!--Exit Header-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Remove Header"/>                                        <!--Remove Header-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Save Selection To Header Gallery"/>                     <!--Save Selection To Header Gallery-->                     
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Exit Header"/>                                          <!--Exit Header-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Remove Header"/>                                        <!--Remove Header-->
+                        <RibbonMenuItem ImageSource="icon/header.png" Header="Save Selection To Header Gallery"/>                     <!--Save Selection To Header Gallery-->                     
                     </RibbonMenuButton>         
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Footer">                                              <!--Footer-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Blank"/>                                                <!--Blank-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Blank (Three Column)"/>                                 <!--Blank (Three Column)-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Austin"/>                                               <!--Austin-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Banded"/>                                               <!--Banded-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Facet (Event Page)"/>                                   <!--Facet (Event Page)-->                        
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="More Footer From Office.com">                      <!--More Footer From Office.com-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Element"/>                                          <!--Element-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Insight"/>                                          <!--Insight-->                            
+                    <RibbonMenuButton LargeImageSource="icon/footer.png" Label="Footer">                                              <!--Footer-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Blank"/>                                                <!--Blank-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Blank (Three Column)"/>                                 <!--Blank (Three Column)-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Austin"/>                                               <!--Austin-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Banded"/>                                               <!--Banded-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Facet (Event Page)"/>                                   <!--Facet (Event Page)-->
+                        <RibbonSplitMenuItem ImageSource="icon/footer.png" Header="More Footer From Office.com">                      <!--More Footer From Office.com-->
+                            <RibbonMenuItem ImageSource="icon/footer.png" Header="Element"/>                                          <!--Element-->
+                            <RibbonMenuItem ImageSource="icon/footer.png" Header="Insight"/>                                          <!--Insight-->                            
                         </RibbonSplitMenuItem>
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Exit Footer"/>                                          <!--Exit Footer-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Remove Footer"/>                                        <!--Remove Footer-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Save Selection To Footer Gallery"/>                     <!--Save Selection To Footer Gallery-->                     
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Exit Footer"/>                                          <!--Exit Footer-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Remove Footer"/>                                        <!--Remove Footer-->
+                        <RibbonMenuItem ImageSource="icon/footer.png" Header="Save Selection To Footer Gallery"/>                     <!--Save Selection To Footer Gallery-->                     
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Page Number">                                             <!--Page Number-->
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="Top of Page">                                          <!--Top of Page-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Simple"/>                                          <!--Simple-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Page X"/>                                          <!--Page X-->                            
+                    <RibbonMenuButton LargeImageSource="icon/page number.png" Label="Page Number">                                             <!--Page Number-->
+                        <RibbonSplitMenuItem ImageSource="icon/page number.png" Header="Top of Page">                                          <!--Top of Page-->
+                            <RibbonMenuItem ImageSource="icon/page number.png" Header="Simple"/>                                          <!--Simple-->
+                            <RibbonMenuItem ImageSource="icon/page number.png" Header="Page X"/>                                          <!--Page X-->                            
                         </RibbonSplitMenuItem>
                     </RibbonMenuButton>
                 </RibbonGroup>
-                <RibbonGroup LargeImageSource="icon/Word.png" Header="Text">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Text Box">                                              <!--Text Box-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Build-in"/>                                                <!--Build-in-->
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="More Text Box From Office.com">                      <!--More Text Box From Office.com-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Element"/>                                          <!--Element-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Insight"/>                                          <!--Insight-->                            
+                <RibbonGroup LargeImageSource="icon/TextBox.png" Header="Text">
+                    <RibbonMenuButton LargeImageSource="icon/TextBox.png" Label="Text Box">                                              <!--Text Box-->
+                        <RibbonMenuItem ImageSource="icon/TextBox.png" Header="Build-in"/>                                                <!--Build-in-->
+                        <RibbonSplitMenuItem ImageSource="icon/TextBox.png" Header="More Text Box From Office.com">                      <!--More Text Box From Office.com-->
+                            <RibbonMenuItem ImageSource="icon/TextBox.png" Header="Element"/>                                          <!--Element-->
+                            <RibbonMenuItem ImageSource="icon/TextBox.png" Header="Insight"/>                                          <!--Insight-->                            
                         </RibbonSplitMenuItem>
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Draw Text Box"/>                                          <!--Draw Text Box-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Save Selection To Text Box Gallery"/>                     <!--Save Selection To Text Box Gallery-->                     
+                        <RibbonMenuItem ImageSource="icon/TextBox.png" Header="Draw Text Box"/>                                          <!--Draw Text Box-->
+                        <RibbonMenuItem ImageSource="icon/TextBox.png" Header="Save Selection To Text Box Gallery"/>                     <!--Save Selection To Text Box Gallery-->                     
                     </RibbonMenuButton> 
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Quick Parts">                                              <!--Quick Parts-->
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="AutoText">                                                 <!--AutoText-->
-                            <RibbonMenuItem ImageSource="icon/Word.png" Header="Save Selection To AutoText Gallery"/>                     <!--Save Selection To AutoText Gallery-->
+                    <RibbonMenuButton LargeImageSource="icon/quickparts.png" Label="Quick Parts">                                              <!--Quick Parts-->
+                        <RibbonSplitMenuItem ImageSource="icon/quickparts.png" Header="AutoText">                                                 <!--AutoText-->
+                            <RibbonMenuItem ImageSource="icon/quickparts.png" Header="Save Selection To AutoText Gallery"/>                     <!--Save Selection To AutoText Gallery-->
                         </RibbonSplitMenuItem>
-                        <RibbonSplitMenuItem ImageSource="icon/Word.png" Header="Document Property">                                                 <!--Document Property-->
+                        <RibbonSplitMenuItem ImageSource="icon/quickparts.png" Header="Document Property">                                                 <!--Document Property-->
                             <RibbonMenuItem />                     
                         </RibbonSplitMenuItem>
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Field..."/>                                         <!--Field...-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Building Blocks Oganizer..."/>                      <!--Building Blocks Oganizer...-->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Save Selection To Quick Parts Gallery"/>                     <!--Save Selection To Quick Parts Gallery-->
+                        <RibbonMenuItem ImageSource="icon/quickparts.png" Header="Field..."/>                                         <!--Field...-->
+                        <RibbonMenuItem ImageSource="icon/quickparts.png" Header="Building Blocks Oganizer..."/>                      <!--Building Blocks Oganizer...-->
+                        <RibbonMenuItem ImageSource="icon/quickparts.png" Header="Save Selection To Quick Parts Gallery"/>                     <!--Save Selection To Quick Parts Gallery-->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="WordArt">                                                 <!--WordArt-->
+                    <RibbonMenuButton LargeImageSource="icon/WordArt.png" Label="WordArt">                                                 <!--WordArt-->
                         <UniformGrid Columns="5" Rows="3">
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
+                            <RibbonButton Width="50" Height="50" LargeImageSource="icon/WordArt.png"></RibbonButton>  <!---->
                         </UniformGrid>                     
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Drop Cap">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="None"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Dropped"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="In Margin"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Drop Cap Options..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/dropcaps.png" Label="Drop Cap">
+                        <RibbonMenuItem ImageSource="icon/dropcaps.png" Header="None"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/dropcaps.png" Header="Dropped"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/dropcaps.png" Header="In Margin"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/dropcaps.png" Header="Drop Cap Options..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
-                <RibbonGroup LargeImageSource="icon/Word.png" Header="Symbols">
-                    <RibbonSplitButton LargeImageSource="icon/Word.png" Label="Equation">
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
+                <RibbonGroup LargeImageSource="icon/symbol.png" Header="Symbols">
+                    <RibbonSplitButton LargeImageSource="icon/equation.png" Label="Equation">
+                        <RibbonMenuItem ImageSource="icon/equation.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/equation.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/equation.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/equation.png" ></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
-                    <RibbonSplitButton LargeImageSource="icon/Word.png" Label="Symbol">
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem></RibbonMenuItem>  <!---->
+                    <RibbonSplitButton LargeImageSource="icon/symbol.png" Label="Symbol">
+                        <RibbonMenuItem ImageSource="icon/symbol.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/symbol.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/symbol.png" ></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/symbol.png" ></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="PageLayout">
                 <RibbonGroup Header="Page Setup">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Margins">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Normal"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Narrow"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Moderate"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Wide"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Mirrored"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Custom Margins"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/margins.png" Label="Margins">
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Normal"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Narrow"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Moderate"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Wide"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Mirrored"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/margins.png" Header="Custom Margins"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Orientation">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Portrait" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Landscape" Height="50"></RibbonMenuItem>  <!---->
-                    </RibbonMenuButton> 
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Size">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Letter" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="A4" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Oficial" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="More Paper Size..." Height="50"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/orientation.png" Label="Orientation">
+                        <RibbonMenuItem ImageSource="icon/orientation.png" Header="Portrait" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/orientation.png" Header="Landscape" Height="50"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Column">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="One" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Two" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Three" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Left" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Right" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="More Column..." Height="50"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/size.png" Label="Size">
+                        <RibbonMenuItem ImageSource="icon/size.png" Header="Letter" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/size.png" Header="A4" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/size.png" Header="Oficial" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/size.png" Header="More Paper Size..." Height="50"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Breaks">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Page" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Column" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Text Wrapping" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Next Page" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Continuous" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Even Page" Height="50"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Odd Page" Height="50"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/column.png" Label="Column">
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="One" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="Two" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="Three" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="Left" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="Right" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/column.png" Header="More Column..." Height="50"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Line Numbers">
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="None"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Continuous"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Restart Each Page"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Restart Each Section"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Suppress"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem ImageSource="icon/Word.png" Header="Line Numbering Options..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/page_break.png" Label="Breaks">
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Page" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Column" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Text Wrapping" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Next Page" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Continuous" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Even Page" Height="50"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/page_break.png" Header="Odd Page" Height="50"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Hyphenation">
+                    <RibbonMenuButton SmallImageSource="icon/linenumber.png" Label="Line Numbers">
+                        <RibbonMenuItem Header="None"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header="Continuous"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header="Restart Each Page"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header="Restart Each Section"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header="Suppress"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/linenumber.png"  Header="Line Numbering Options..."></RibbonMenuItem>  <!---->
+                    </RibbonMenuButton>
+                    <RibbonMenuButton SmallImageSource="icon/hyphenation.png" Label="Hyphenation">
                         <RibbonMenuItem Header="None"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Automatic"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Manual"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Hyphenation Options..."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/hyphenation.png"  Header="Hyphenation Options..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Paragraph">
                     
                 </RibbonGroup>
                 <RibbonGroup Header="Arrange">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Position">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/Position.png" Label="Position">
+                        <RibbonMenuItem ImageSource="icon/Position.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Position.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Position.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Position.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Wrap Text">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/wrap_text.png" Label="Wrap Text">
+                        <RibbonMenuItem ImageSource="icon/wrap_text.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/wrap_text.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/wrap_text.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/wrap_text.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Bring Forward">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/bring_forward.png" Label="Bring Forward">
+                        <RibbonMenuItem ImageSource="icon/bring_forward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/bring_forward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/bring_forward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/bring_forward.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Send Backward">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/send_backward.png" Label="Send Backward">
+                        <RibbonMenuItem ImageSource="icon/send_backward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/send_backward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/send_backward.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/send_backward.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Selection Pane"></RibbonButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Align">
-                        <RibbonMenuItem Header="Align Left"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Align Center"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Align Right"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Align Top"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Align Middle"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Align Bottom"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Distribute Horizontally"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Distribute Vertically"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Grid Setting..."></RibbonMenuItem>  <!---->
+                    <RibbonButton LargeImageSource="icon/Selection_pane.png" Label="Selection Pane"></RibbonButton>
+                    <RibbonMenuButton SmallImageSource="icon/Align.png" Label="Align">
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Left"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Center"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Right"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Top"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Middle"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Align Bottom"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Distribute Horizontally"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Distribute Vertically"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Align.png"  Header="Grid Setting..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Group">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/Group.png" Label="Group">
+                        <RibbonMenuItem ImageSource="icon/Group.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Group.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Group.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Group.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Rotate">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/Rotate.png" Label="Rotate">
+                        <RibbonMenuItem ImageSource="icon/Rotate.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Rotate.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Rotate.png"  Header="....."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Rotate.png"  Header="....."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="References">
                 <RibbonGroup Header="Table of Contents">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Table of Contents">
-                        <RibbonMenuItem Header="Build-in"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/TableofContents.png" Label="Table of Contents">
+                        <RibbonMenuItem ImageSource="icon/TableofContents.png"  Header="Build-in"></RibbonMenuItem>  <!---->
                         <RibbonSplitMenuItem Header="More table of contents from office.com...">
-                            <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
+                            <RibbonMenuItem ImageSource="icon/TableofContents.png"  Header="..."></RibbonMenuItem>  <!---->
                         </RibbonSplitMenuItem>  <!---->
-                        <RibbonMenuItem Header="Remove table of contents"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Custom table of contents"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/TableofContents.png"  Header="Remove table of contents"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/TableofContents.png"  Header="Custom table of contents"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Add Text">
-                        <RibbonMenuItem Header="Do not show in table of contents"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Level 1"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Level 2"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Level 3"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/add_text.png" Label="Add Text">
+                        <RibbonMenuItem ImageSource="icon/add_text.png"  Header="Do not show in table of contents"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/add_text.png"  Header="Level 1"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/add_text.png"  Header="Level 2"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/add_text.png"  Header="Level 3"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton Label="Update Table" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
+                    <RibbonButton Label="Update Table" SmallImageSource="icon/update_table.png"></RibbonButton>  <!---->
                 </RibbonGroup>
                 <RibbonGroup Header="Footnotes">
-                    <RibbonButton Label="Insert Footnote" LargeImageSource="icon/Word.png"></RibbonButton>  <!---->
-                    <RibbonButton Label="Insert Endnote" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
-                    <RibbonSplitButton Label="Next Footnote" SmallImageSource="icon/Word.png">
+                    <RibbonButton Label="Insert Footnote" LargeImageSource="icon/insert_footnote.png"></RibbonButton>  <!---->
+                    <RibbonButton Label="Insert Endnote" SmallImageSource="icon/insert_endnote.png"></RibbonButton>  <!---->
+                    <RibbonSplitButton Label="Next Footnote" SmallImageSource="icon/insert_footnote.png">
                         <RibbonMenuItem Header="Next Footnote"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Previous Footnote"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Next Endnote"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Previous Endnote"></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>  <!---->
-                    <RibbonButton Label="Show Notes" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
+                    <RibbonButton Label="Show Notes" SmallImageSource="icon/insert_footnote.png"></RibbonButton>  <!---->
                 </RibbonGroup>
                 <RibbonGroup Header="Citations and Bibliogrphy">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Insert Citation">
-                        <RibbonMenuItem Header="Add New Source..."></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Add New Placeholder"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/insert_citation.png" Label="Insert Citation">
+                        <RibbonMenuItem ImageSource="icon/insert_citation.png"  Header="Add New Source..."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/insert_citation.png"  Header="Add New Placeholder"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton Label="Manage Source" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
+                    <RibbonButton Label="Manage Source" SmallImageSource="icon/manage_source.png"></RibbonButton>  <!---->
                     <Label></Label>  <!---->
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Bibliography">
-                        <RibbonMenuItem Header="Build-in"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Insert Bibliography"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/bibliography.png" Label="Bibliography">
+                        <RibbonMenuItem ImageSource="icon/bibliography.png"  Header="Build-in"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/bibliography.png"  Header="Insert Bibliography"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Captions">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Insert Caption"></RibbonButton>
-                    <RibbonButton Label="Insert Table of Figures" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Update Table"></RibbonButton>
-                    <RibbonButton Label="Cross-reference" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
+                    <RibbonButton LargeImageSource="icon/insert_caption.png" Label="Insert Caption"></RibbonButton>
+                    <RibbonButton Label="Insert Table of Figures" SmallImageSource="icon/insert_table_of_figures.png"></RibbonButton>  <!---->
+                    <RibbonButton SmallImageSource="icon/update_table.png" Label="Update Table"></RibbonButton>
+                    <RibbonButton Label="Cross-reference" SmallImageSource="icon/cross_reference.png"></RibbonButton>  <!---->
                 </RibbonGroup>
                 <RibbonGroup Header="Index">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Mark Entry"></RibbonButton>
-                    <RibbonButton Label="Insert Index" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Update Index"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/mark_entry.png" Label="Mark Entry"></RibbonButton>
+                    <RibbonButton Label="Insert Index" SmallImageSource="icon/new.png"></RibbonButton>  <!---->
+                    <RibbonButton SmallImageSource="icon/update_table.png" Label="Update Index"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Table of Authorities">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Mark Citation"></RibbonButton>
-                    <RibbonButton Label="Insert Table of Authorities" SmallImageSource="icon/Word.png"></RibbonButton>  <!---->
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Update Table"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/mark_citation.png" Label="Mark Citation"></RibbonButton>
+                    <RibbonButton Label="Insert Table of Authorities" SmallImageSource="icon/insert_table_of_authorities.png"></RibbonButton>  <!---->
+                    <RibbonButton SmallImageSource="icon/update_table.png" Label="Update Table"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="Mailing">
                 <RibbonGroup Header="Create">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Envelopes"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Label"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/Envelopes.png" Label="Envelopes"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/labels.png" Label="Label"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Start Mail Merge">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Start Mail Merge">
-                        <RibbonMenuItem Header="Letter"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Email Message"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Envelopes"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Labels"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Directory"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Normal Word Document"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Step-by-step Mail Merge Wizard..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/start_mail_merge.png" Label="Start Mail Merge">
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Letter"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Email Message"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Envelopes"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Labels"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Directory"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Normal Word Document"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/start_mail_merge.png"  Header="Step-by-step Mail Merge Wizard..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Select Recipients">
-                        <RibbonMenuItem Header="Type a New List"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Use an Existing List"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Choose from Outlook Contact..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/select_recipients.png" Label="Select Recipients">
+                        <RibbonMenuItem ImageSource="icon/select_recipients.png"  Header="Type a New List"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/select_recipients.png"  Header="Use an Existing List"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/select_recipients.png"  Header="Choose from Outlook Contact..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                     <RibbonButton LargeImageSource="icon/Word.png" Label="Edit Recipient List"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Write and Insert Fields">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Highlight Merge Field"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Greeting Line"></RibbonButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Insert Merge Field">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonButton LargeImageSource="icon/edit_recipients_list.png" Label="Highlight Merge Field"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/greeting_line.png" Label="Greeting Line"></RibbonButton>
+                    <RibbonMenuButton LargeImageSource="icon/insert_merge_field.png" Label="Insert Merge Field">
+                        <RibbonMenuItem ImageSource="icon/insert_merge_field.png"  Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/insert_merge_field.png"  Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/insert_merge_field.png"  Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/insert_merge_field.png"  Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/insert_merge_field.png"  Header=".............."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Rules">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/Rules.png" Label="Rules">
+                        <RibbonMenuItem Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header=".............."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem Header=".............."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Match Field"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Update Label"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/match_field.png" Label="Match Field"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/update_label.png" Label="Update Label"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Preview Results">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Preview Results"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Find Recipient"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Check for Errors"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/review_results.png" Label="Review Results"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/find_recipients.png" Label="Find Recipient"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/spelling_and_grammar.png" Label="Check for Errors"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Finish">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Finish and Merge">
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header=""></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/finish-merge.png" Label="Finish and Merge">
+                        <RibbonMenuItem ImageSource="icon/finish-merge.png"  Header="................."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/finish-merge.png"  Header="................."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/finish-merge.png"  Header="................."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/finish-merge.png"  Header="................."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/finish-merge.png"  Header="................."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="Review">
                 <RibbonGroup Header="Proofing">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Spelling and Grammar"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Define"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Thesaurus"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Word Count"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/spelling_and_grammar.png" Label="Spelling and Grammar"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/Define.png" Label="Define"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/Thesaurus.png" Label="Thesaurus"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/word_count.png" Label="Word Count"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Language">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Translate">
-                        <RibbonMenuItem Header="Translate Document"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Translate Selected Text"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Mini Translator"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Choose Translation Language..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/translate.png" Label="Translate">
+                        <RibbonMenuItem ImageSource="icon/translate.png"  Header="Translate Document"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/translate.png"  Header="Translate Selected Text"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/translate.png"  Header="Mini Translator"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/translate.png"  Header="Choose Translation Language..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Language">
-                        <RibbonMenuItem Header="Set Proofing Language..."></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Language Reference..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/Language.png" Label="Language">
+                        <RibbonMenuItem ImageSource="icon/Language.png"  Header="Set Proofing Language..."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Language.png"  Header="Language Reference..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Comments">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="New Comment"></RibbonButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Delete">
-                        <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
+                    <RibbonButton LargeImageSource="icon/new_comment.png" Label="New Comment"></RibbonButton>
+                    <RibbonMenuButton LargeImageSource="icon/comment_delete.png" Label="Delete">
+                        <RibbonMenuItem ImageSource="icon/comment_delete.png"  Header="........"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/comment_delete.png"  Header="........"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Previous"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Next"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Show Comment"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Ink Comment"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Pen"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Eraser"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/comment_previous.png" Label="Previous"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/comment_next.png" Label="Next"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/show_note.png" Label="Show Comment"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/new_comment.png" Label="Ink Comment"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/Pen.png" Label="Pen"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/Eraser.png" Label="Eraser"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Tracking">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Track Changes">
-                        <RibbonMenuItem Header="Track Changes"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Look Tracking"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/track_changes.png" Label="Track Changes">
+                        <RibbonMenuItem ImageSource="icon/track_changes.png"  Header="Track Changes"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/track_changes.png"  Header="Look Tracking"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Simple Markup">
-                        <RibbonMenuItem Header="All Markup"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="No Markup"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Original"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/final_show_markup.png" Label="Simple Markup">
+                        <RibbonMenuItem ImageSource="icon/final_show_markup.png"  Header="All Markup"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/final_show_markup.png"  Header="No Markup"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/final_show_markup.png"  Header="Original"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonMenuButton SmallImageSource="icon/Word.png" Label="Show Markup">
-                        <RibbonMenuItem Header="Comments"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Ink"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Insertion and Deletion"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Comments"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Formating"></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton SmallImageSource="icon/show_markup.png" Label="Show Markup">
+                        <RibbonMenuItem ImageSource="icon/show_markup.png"  Header="Comments"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/show_markup.png"  Header="Ink"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/show_markup.png"  Header="Insertion and Deletion"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/show_markup.png"  Header="Comments"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/show_markup.png"  Header="Formating"></RibbonMenuItem>  <!---->
                         <RibbonSplitMenuItem Header="Balloons">
                             <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
                             <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
@@ -850,88 +847,88 @@
                         <RibbonMenuItem Header="Highlight Update"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem Header="Other Author"></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonSplitButton SmallImageSource="icon/Word.png" Label="Reviewing Pane">
-                        <RibbonMenuItem Header="Reviewing Pane Vertical"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Reviewing Pane Horizontal"></RibbonMenuItem>  <!---->
+                    <RibbonSplitButton SmallImageSource="icon/reviewing_pane.png" Label="Reviewing Pane">
+                        <RibbonMenuItem ImageSource="icon/reviewing_pane.png"  Header="Reviewing Pane Vertical"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/reviewing_pane.png"  Header="Reviewing Pane Horizontal"></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Changes">
-                    <RibbonSplitButton LargeImageSource="icon/Word.png" Label="Accept">
-                        <RibbonMenuItem Header="Accept and Move to Next"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Accept This Change"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Accept All Changes Show"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Accept All Changes"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Accept All Changes and Stop Tracking"></RibbonMenuItem>  <!---->
+                    <RibbonSplitButton LargeImageSource="icon/Accept.png" Label="Accept">
+                        <RibbonMenuItem ImageSource="icon/Accept.png"  Header="Accept and Move to Next"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Accept.png"  Header="Accept This Change"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Accept.png"  Header="Accept All Changes Show"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Accept.png"  Header="Accept All Changes"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Accept.png"  Header="Accept All Changes and Stop Tracking"></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
-                    <RibbonSplitButton LargeImageSource="icon/Word.png" Label="Reject">
-                        <RibbonMenuItem Header="Reject and Move to Next"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Reject This Change"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Reject All Changes Show"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Reject All Changes"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Reject All Changes and Stop Tracking"></RibbonMenuItem>  <!---->
+                        <RibbonSplitButton LargeImageSource="icon/Reject.png" Label="Reject">
+                        <RibbonMenuItem ImageSource="icon/Reject.png"  Header="Reject and Move to Next"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Reject.png"  Header="Reject This Change"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Reject.png"  Header="Reject All Changes Show"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Reject.png"  Header="Reject All Changes"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Reject.png"  Header="Reject All Changes and Stop Tracking"></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Previous"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Next"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/previous_change.png" Label="Previous"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/next_previous.png" Label="Next"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Compare">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Compare">
-                        <RibbonMenuItem Header="Compare"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Combine"></RibbonMenuItem>  <!---->
-                        <RibbonSplitMenuItem Header="Show Source Document">
-                            <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
-                            <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
-                            <RibbonMenuItem Header="..."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/Compare.png" Label="Compare">
+                        <RibbonMenuItem ImageSource="icon/Compare.png"  Header="Compare"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Compare.png"  Header="Combine"></RibbonMenuItem>  <!---->
+                        <RibbonSplitMenuItem ImageSource="icon/Compare.png"  Header="Show Source Document">
+                            <RibbonMenuItem ImageSource="icon/Compare.png"  Header="..."></RibbonMenuItem>  <!---->
+                            <RibbonMenuItem ImageSource="icon/Compare.png"  Header="..."></RibbonMenuItem>  <!---->
+                            <RibbonMenuItem ImageSource="icon/Compare.png"  Header="..."></RibbonMenuItem>  <!---->
                         </RibbonSplitMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Protect">
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Block Authors">
-                        <RibbonMenuItem Header="...."></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="...."></RibbonMenuItem>  <!---->
+                    <RibbonMenuButton LargeImageSource="icon/block_authors.png" Label="Block Authors">
+                        <RibbonMenuItem ImageSource="icon/block_authors.png"  Header="...."></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/block_authors.png"  Header="...."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Retrict Editing"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/restrict_editing.png" Label="Retrict Editing"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Ink">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Start Inking"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/inking.png" Label="Start Inking"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="View">
                 <RibbonGroup Header="Views">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Read Mode"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Print Layout"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Web Layout"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Outline"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Draft"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/fullscreen_reading.png" Label="Read Mode"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/print_layout.png" Label="Print Layout"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/web_layout.png" Label="Web Layout"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/Outline.png" Label="Outline"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/Draft.png" Label="Draft"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Show">
-                    <RibbonCheckBox IsChecked="True" SmallImageSource="icon/Word.png" Label="Rules"></RibbonCheckBox>
-                    <RibbonCheckBox SmallImageSource="icon/Word.png" Label="Gridlines"></RibbonCheckBox>
-                    <RibbonCheckBox SmallImageSource="icon/Word.png" Label="Navigation Pane"></RibbonCheckBox>
+                    <RibbonCheckBox IsChecked="True" Label="Rules"></RibbonCheckBox>
+                    <RibbonCheckBox Label="Gridlines"></RibbonCheckBox>
+                    <RibbonCheckBox Label="Navigation Pane"></RibbonCheckBox>
                 </RibbonGroup>
                 <RibbonGroup Header="Zoom">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Zoom"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="100%"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="One Page"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Multiple Page"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Page Width"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/Zoom.png" Label="Zoom"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/zoom_percentage.png" Label="100%"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/one_page.png" Label="One Page"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/Column.png" Label="Multiple Page"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/page_width.png" Label="Page Width"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Window">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="New Window"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Arrange All"></RibbonButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Split"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="View Side by Side"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Synchchronous Scrolling"></RibbonButton>
-                    <RibbonButton SmallImageSource="icon/Word.png" Label="Reset Window Position"></RibbonButton>
-                    <RibbonMenuButton LargeImageSource="icon/Word.png" Label="Switch Windows">
-                        <RibbonMenuItem Header="1 Document1"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="...."></RibbonMenuItem>  <!---->
+                    <RibbonButton LargeImageSource="icon/new_window.png" Label="New Window"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/arrange_all.png" Label="Arrange All"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/Split.png" Label="Split"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/view_sidebyside.png" Label="View Side by Side"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/synchronous_scrolling.png" Label="Synchchronous Scrolling"></RibbonButton>
+                    <RibbonButton SmallImageSource="icon/reset_window_position.png" Label="Reset Window Position"></RibbonButton>
+                    <RibbonMenuButton LargeImageSource="icon/switch_window.png" Label="Switch Windows">
+                        <RibbonMenuItem ImageSource="icon/switch_window.png"  Header="1 Document1"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/switch_window.png"  Header="..........."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Macros">
-                    <RibbonSplitButton LargeImageSource="icon/Word.png" Label="Macros">
-                        <RibbonMenuItem Header="View Macros"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Record Macros"></RibbonMenuItem>  <!---->
-                        <RibbonMenuItem Header="Pause Macros"></RibbonMenuItem>  <!---->
+                    <RibbonSplitButton LargeImageSource="icon/Macros.png" Label="Macros">
+                        <RibbonMenuItem ImageSource="icon/Macros.png"  Header="View Macros"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Macros.png"  Header="Record Macros"></RibbonMenuItem>  <!---->
+                        <RibbonMenuItem ImageSource="icon/Macros.png"  Header="Pause Macros"></RibbonMenuItem>  <!---->
                     </RibbonSplitButton>
                 </RibbonGroup>
             </RibbonTab>

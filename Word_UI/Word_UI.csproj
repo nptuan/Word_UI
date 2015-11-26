@@ -101,6 +101,247 @@
   <ItemGroup>
     <Resource Include="icon\Word.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\Accept.PNG" />
+    <Resource Include="icon\address_block.PNG" />
+    <Resource Include="icon\add_text.PNG" />
+    <Resource Include="icon\AdvancedFind.png" />
+    <Resource Include="icon\Align.PNG" />
+    <Resource Include="icon\AlignTextCenter.png" />
+    <Resource Include="icon\AlignTextJustify.png" />
+    <Resource Include="icon\AlignTextLeft.png" />
+    <Resource Include="icon\AlignTextRight.png" />
+    <Resource Include="icon\arrange_all.PNG" />
+    <Resource Include="icon\auto_check_for_error.PNG" />
+    <Resource Include="icon\bibliography.PNG" />
+    <Resource Include="icon\block_authors.png" />
+    <Resource Include="icon\Bookmark.png" />
+    <Resource Include="icon\border bottom.png" />
+    <Resource Include="icon\breaks.PNG" />
+    <Resource Include="icon\bring_forward.PNG" />
+    <Resource Include="icon\Brush.png" />
+    <Resource Include="icon\bullet.png" />
+    <Resource Include="icon\changecase.png" />
+    <Resource Include="icon\changestyle.png" />
+    <Resource Include="icon\chart.png" />
+    <Resource Include="icon\clearformatting.png" />
+    <Resource Include="icon\clip art.png" />
+    <Resource Include="icon\Clipboard.png" />
+    <Resource Include="icon\colors.png" />
+    <Resource Include="icon\color_page.png" />
+    <Resource Include="icon\column.png" />
+    <Resource Include="icon\comment_delete.PNG" />
+    <Resource Include="icon\comment_next.PNG" />
+    <Resource Include="icon\comment_previous.PNG" />
+    <Resource Include="icon\Compare.PNG" />
+    <Resource Include="icon\Copy.png" />
+    <Resource Include="icon\coverpage.png" />
+    <Resource Include="icon\cross_reference%281%29.png" />
+    <Resource Include="icon\cross_reference.png" />
+    <Resource Include="icon\cut.png" />
+    <Resource Include="icon\Date and Time.png" />
+    <Resource Include="icon\DecreaseIndent.png" />
+    <Resource Include="icon\document_orientation.png" />
+    <Resource Include="icon\document_size.png" />
+    <Resource Include="icon\doc_break.png" />
+    <Resource Include="icon\Draft.PNG" />
+    <Resource Include="icon\dropcaps.png" />
+    <Resource Include="icon\edit_recipients_list.PNG" />
+    <Resource Include="icon\effects.png" />
+    <Resource Include="icon\Envelopes.PNG" />
+    <Resource Include="icon\equation.PNG" />
+    <Resource Include="icon\final_show_markup.PNG" />
+    <Resource Include="icon\Find.png" />
+    <Resource Include="icon\find_recipients.PNG" />
+    <Resource Include="icon\finish-merge.PNG" />
+    <Resource Include="icon\font.png" />
+    <Resource Include="icon\Fonts%281%29.png" />
+    <Resource Include="icon\font_bold.png" />
+    <Resource Include="icon\font_color.PNG" />
+    <Resource Include="icon\font_italic.png" />
+    <Resource Include="icon\font_underline.png" />
+    <Resource Include="icon\footer.png" />
+    <Resource Include="icon\fullscreen_reading.PNG" />
+    <Resource Include="icon\Goto.png" />
+    <Resource Include="icon\greeting_line.PNG" />
+    <Resource Include="icon\Group.PNG" />
+    <Resource Include="icon\growfont.png" />
+    <Resource Include="icon\header.png" />
+    <Resource Include="icon\Heading1.png" />
+    <Resource Include="icon\Heading2.png" />
+    <Resource Include="icon\Heading3.png" />
+    <Resource Include="icon\highlight_merge_field.PNG" />
+    <Resource Include="icon\Hyperlink.png" />
+    <Resource Include="icon\hyphenation.png" />
+    <Resource Include="icon\IncreaseIndent.png" />
+    <Resource Include="icon\indent_left.png" />
+    <Resource Include="icon\indent_right.png" />
+    <Resource Include="icon\insert_caption.PNG" />
+    <Resource Include="icon\insert_citation.PNG" />
+    <Resource Include="icon\insert_endnote.PNG" />
+    <Resource Include="icon\insert_footnote.PNG" />
+    <Resource Include="icon\insert_merge_field.PNG" />
+    <Resource Include="icon\insert_table_of_authorities.PNG" />
+    <Resource Include="icon\insert_table_of_figures.PNG" />
+    <Resource Include="icon\Intense.png" />
+    <Resource Include="icon\IntenseRef.png" />
+    <Resource Include="icon\labels.PNG" />
+    <Resource Include="icon\language.PNG" />
+    <Resource Include="icon\LineAndParagraphSpacing.png" />
+    <Resource Include="icon\linenumber.png" />
+    <Resource Include="icon\macros.PNG" />
+    <Resource Include="icon\manage_source.PNG" />
+    <Resource Include="icon\margins.PNG" />
+    <Resource Include="icon\mark_citation.PNG" />
+    <Resource Include="icon\mark_entry.PNG" />
+    <Resource Include="icon\match_field.PNG" />
+    <Resource Include="icon\multilevel list.png" />
+    <Resource Include="icon\new_comment.PNG" />
+    <Resource Include="icon\new_window.PNG" />
+    <Resource Include="icon\next_footnote.PNG" />
+    <Resource Include="icon\next_previous.PNG" />
+    <Resource Include="icon\NoSpacing.png" />
+    <Resource Include="icon\Numbering.png" />
+    <Resource Include="icon\object.png" />
+    <Resource Include="icon\one_page.PNG" />
+    <Resource Include="icon\open.png" />
+    <Resource Include="icon\orientation.PNG" />
+    <Resource Include="icon\outline.PNG" />
+    <Resource Include="icon\page number.png" />
+    <Resource Include="icon\page_blank.png" />
+    <Resource Include="icon\page_border.png" />
+    <Resource Include="icon\page_break.png" />
+    <Resource Include="icon\page_width.PNG" />
+    <Resource Include="icon\Paste.png" />
+    <Resource Include="icon\Pictures.png" />
+    <Resource Include="icon\Position.png" />
+    <Resource Include="icon\previous_change.PNG" />
+    <Resource Include="icon\print_layout.PNG" />
+    <Resource Include="icon\quickparts.png" />
+    <Resource Include="icon\Reject.PNG" />
+    <Resource Include="icon\Replace.png" />
+    <Resource Include="icon\research.PNG" />
+    <Resource Include="icon\reset_window_position.PNG" />
+    <Resource Include="icon\restrict_editing.PNG" />
+    <Resource Include="icon\reviewing_pane.PNG" />
+    <Resource Include="icon\review_results.PNG" />
+    <Resource Include="icon\Rotate.PNG" />
+    <Resource Include="icon\Rules.PNG" />
+    <Resource Include="icon\Save.png" />
+    <Resource Include="icon\saveas.png" />
+    <Resource Include="icon\Screenshot.png" />
+    <Resource Include="icon\Select.png" />
+    <Resource Include="icon\selectall.png" />
+    <Resource Include="icon\Selection_pane.PNG" />
+    <Resource Include="icon\select_recipients.PNG" />
+    <Resource Include="icon\send_backward.PNG" />
+    <Resource Include="icon\Shading.png" />
+    <Resource Include="icon\shapes.png" />
+    <Resource Include="icon\show_markup.PNG" />
+    <Resource Include="icon\show_note.PNG" />
+    <Resource Include="icon\shrinkfont.png" />
+    <Resource Include="icon\signature.png" />
+    <Resource Include="icon\size.PNG" />
+    <Resource Include="icon\SmartArt.PNG" />
+    <Resource Include="icon\Sort.png" />
+    <Resource Include="icon\spacing_after.png" />
+    <Resource Include="icon\spacing_before.png" />
+    <Resource Include="icon\spelling_and_grammar.PNG" />
+    <Resource Include="icon\split.PNG" />
+    <Resource Include="icon\start_mail_merge.PNG" />
+    <Resource Include="icon\strikethrough.png" />
+    <Resource Include="icon\styles.PNG" />
+    <Resource Include="icon\subscript.png" />
+    <Resource Include="icon\superscript.png" />
+    <Resource Include="icon\switch_window.PNG" />
+    <Resource Include="icon\symbol.PNG" />
+    <Resource Include="icon\synchronous_scrolling.PNG" />
+    <Resource Include="icon\Table.png" />
+    <Resource Include="icon\TableofContents.PNG" />
+    <Resource Include="icon\text effect.png" />
+    <Resource Include="icon\TextBox.png" />
+    <Resource Include="icon\TextHighlight.png" />
+    <Resource Include="icon\themes.png" />
+    <Resource Include="icon\Thesaurus.PNG" />
+    <Resource Include="icon\Title.png" />
+    <Resource Include="icon\track_changes.PNG" />
+    <Resource Include="icon\translate.PNG" />
+    <Resource Include="icon\two_pages.PNG" />
+    <Resource Include="icon\update_label.PNG" />
+    <Resource Include="icon\update_table.PNG" />
+    <Resource Include="icon\view_sidebyside.PNG" />
+    <Resource Include="icon\watermark.png" />
+    <Resource Include="icon\web_layout.PNG" />
+    <Resource Include="icon\WordArt.png" />
+    <Resource Include="icon\word_count.PNG" />
+    <Resource Include="icon\wrap_text.PNG" />
+    <Resource Include="icon\Zoom.PNG" />
+    <Resource Include="icon\zoom_percentage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\new.png" />
+    <Resource Include="icon\print.png" />
+    <Resource Include="icon\redo.png" />
+    <Resource Include="icon\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\4bullet.png" />
+    <Resource Include="icon\checkbullet.png" />
+    <Resource Include="icon\colorbullet.png" />
+    <Resource Include="icon\dotbullet.png" />
+    <Resource Include="icon\dotbullet1.png" />
+    <Resource Include="icon\nonebullet.png" />
+    <Resource Include="icon\squarebullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\1numbering.png" />
+    <Resource Include="icon\2numbering.png" />
+    <Resource Include="icon\3numbering.png" />
+    <Resource Include="icon\4numbering.png" />
+    <Resource Include="icon\5numbering.png" />
+    <Resource Include="icon\6numbering.png" />
+    <Resource Include="icon\7numbering.png" />
+    <Resource Include="icon\nonenumbering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\1multi.png" />
+    <Resource Include="icon\2multi.png" />
+    <Resource Include="icon\3multi.png" />
+    <Resource Include="icon\4multi.png" />
+    <Resource Include="icon\5multi.png" />
+    <Resource Include="icon\6multi.png" />
+    <Resource Include="icon\7multi.png" />
+    <Resource Include="icon\multilevellist.png" />
+    <Resource Include="icon\nonemulti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\wikipedia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\comment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\define.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\eraser.png" />
+    <Resource Include="icon\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\inking.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
