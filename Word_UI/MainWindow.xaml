@@ -29,16 +29,16 @@
                         <RibbonApplicationMenuItem Header="Open Document Text" ImageSource="icon/Word.png"/>
                     </RibbonApplicationSplitMenuItem>
                     <RibbonApplicationMenuItem Header="Print" ImageSource="icon/print.png"/>         <!--Print-->
-                    <RibbonApplicationMenuItem Header="Page Setup" ImageSource="icon/Word.png"/>    <!--Page Setup-->
-                    <RibbonApplicationMenuItem Header="Exit" ImageSource="icon/Word.png"/>          <!--Exit-->
-                        <RibbonApplicationMenu.AuxiliaryPaneContent>
+                    <RibbonApplicationMenuItem Header="Page Setup" ImageSource="icon/margins.png"/>    <!--Page Setup-->
+                    <RibbonApplicationMenuItem Header="Exit" ImageSource="icon/exit.png"/>          <!--Exit-->
+                        <!--<RibbonApplicationMenu.AuxiliaryPaneContent>
                             <RibbonGallery>
                                 <RibbonGalleryCategory MaxColumnCount="1">
                                     <RibbonGalleryItem Content="Paste">                                    
                                     </RibbonGalleryItem>
                                 </RibbonGalleryCategory>
                             </RibbonGallery>                        
-                        </RibbonApplicationMenu.AuxiliaryPaneContent>                    
+                        </RibbonApplicationMenu.AuxiliaryPaneContent>-->                    
                 </RibbonApplicationMenu>
             </Ribbon.ApplicationMenu>
             <RibbonTab Header="Home">
@@ -68,21 +68,22 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <RibbonComboBox Grid.Column="0">
-                                <ribbon:RibbonGallery ScrollViewer.VerticalScrollBarVisibility="Auto">
-                                    <ribbon:RibbonGalleryCategory>
-                                        <ribbon:RibbonGalleryItem Content="Arial"/>
-                                        <ribbon:RibbonGalleryItem Content="Time New Roman"/>
-                                        <ribbon:RibbonGalleryItem Content="Trebuchet MS"/>
-                                    </ribbon:RibbonGalleryCategory>
+                            <RibbonComboBox Grid.Column="0" IsEditable="True">
+                                <ribbon:RibbonGallery ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Source={x:Static Fonts.SystemFontFamilies}}">
                                 </ribbon:RibbonGallery>
                             </RibbonComboBox>
-                            <RibbonComboBox Grid.Column="1" SelectionBoxWidth="20">
+                            <RibbonComboBox Grid.Column="1" SelectionBoxWidth="20" IsEditable="True">
                                 <ribbon:RibbonGallery ScrollViewer.VerticalScrollBarVisibility="Auto">
                                     <ribbon:RibbonGalleryCategory>
-                                        <ribbon:RibbonGalleryItem Content="1"/>
-                                        <ribbon:RibbonGalleryItem Content="2"/>
+                                        <ribbon:RibbonGalleryItem Content="5"/>
+                                        <ribbon:RibbonGalleryItem Content="9"/>
                                         <ribbon:RibbonGalleryItem Content="10"/>
+                                        <ribbon:RibbonGalleryItem Content="11"/>
+                                        <ribbon:RibbonGalleryItem Content="12"/>
+                                        <ribbon:RibbonGalleryItem Content="13"/>
+                                        <ribbon:RibbonGalleryItem Content="14"/>
+                                        <ribbon:RibbonGalleryItem Content="25"/>
+                                        <ribbon:RibbonGalleryItem Content="30"/>
                                     </ribbon:RibbonGalleryCategory>
                                 </ribbon:RibbonGallery>
                             </RibbonComboBox>
@@ -109,9 +110,9 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <RibbonButton Grid.Column="0" SmallImageSource="icon/font_bold.png"></RibbonButton>                            <!--Bold-->
-                            <RibbonButton Grid.Column="1" SmallImageSource="icon/font_italic.png"></RibbonButton>                            <!--Italic-->
-                            <RibbonSplitButton Grid.Column="2" SmallImageSource="icon/font_underline.png" >                                <!--Underline-->
+                            <RibbonToggleButton Grid.Column="0" SmallImageSource="icon/font_bold.png"></RibbonToggleButton>                            <!--Bold-->
+                            <RibbonToggleButton Grid.Column="1" SmallImageSource="icon/font_italic.png"></RibbonToggleButton>                            <!--Italic-->
+                            <RibbonSplitButton Grid.Column="2" SmallImageSource="icon/font_underline.png" IsCheckable="True" >                                <!--Underline-->
                                 <RibbonMenuItem Header="____________________________________"/>                                <!--Underline-->
                                 <RibbonMenuItem Header="═══════════════"/>                                <!--Double underline-->
                                 <RibbonMenuItem Header="▄▄▄▄▄▄▄▄"/>                                <!--Thick underline-->
@@ -209,7 +210,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>                            
-                            <RibbonSplitButton Grid.Column="0" SmallImageSource="icon/bullet.png">    <!--Bullets-->
+                            <RibbonSplitButton Grid.Column="0" SmallImageSource="icon/bullet.png" IsCheckable="True">    <!--Bullets-->
                                 <UniformGrid Columns="6" Rows="2">
                                     <RibbonButton Width="60" Height="60" LargeImageSource="icon/nonebullet.png"></RibbonButton>  <!--None Bullets-->
                                     <RibbonButton Width="60" Height="60" LargeImageSource="icon/dotbullet.png"></RibbonButton>  <!--Dot Bullets-->
@@ -221,8 +222,8 @@
                                     <RibbonButton Width="60" Height="60" LargeImageSource="icon/bullet.png"></RibbonButton>  <!--Bullets-->                                                                     
                                 </UniformGrid>
                                 <RibbonMenuItem Header="Define NewBullets"/>   <!--Define NewBullets-->
-                            </RibbonSplitButton> 
-                            <RibbonSplitButton Grid.Column="1" SmallImageSource="icon/Numbering.png">    <!--Numbering-->
+                            </RibbonSplitButton>
+                            <RibbonSplitButton Grid.Column="1" SmallImageSource="icon/Numbering.png" IsCheckable="True">    <!--Numbering-->
                                 <UniformGrid Columns="3" Rows="3">
                                     <RibbonButton Width="60" Height="60" LargeImageSource="icon/nonenumbering.png"></RibbonButton>  <!--None Numbering-->
                                     <RibbonButton Width="60" Height="60" LargeImageSource="icon/1numbering.png"></RibbonButton>  <!--Numbering-->
@@ -265,10 +266,10 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>                            
-                            <RibbonButton Grid.Column="0" SmallImageSource="icon/AlignTextLeft.png"></RibbonButton>  <!--Align Left-->
-                            <RibbonButton Grid.Column="1" SmallImageSource="icon/AlignTextCenter.png"></RibbonButton>  <!--Center-->
-                            <RibbonButton Grid.Column="2" SmallImageSource="icon/AlignTextRight.png"></RibbonButton>  <!--Align Right-->
-                            <RibbonButton Grid.Column="3" SmallImageSource="icon/AlignTextJustify.png"></RibbonButton>  <!--Justify-->
+                            <RibbonRadioButton GroupName="1" Grid.Column="0" SmallImageSource="icon/AlignTextLeft.png"></RibbonRadioButton>  <!--Align Left-->
+                            <RibbonRadioButton GroupName="1" Grid.Column="1" SmallImageSource="icon/AlignTextCenter.png"></RibbonRadioButton>  <!--Center-->
+                            <RibbonRadioButton GroupName="1" Grid.Column="2" SmallImageSource="icon/AlignTextRight.png"></RibbonRadioButton>  <!--Align Right-->
+                            <RibbonRadioButton GroupName="1" Grid.Column="3" SmallImageSource="icon/AlignTextJustify.png"></RibbonRadioButton>  <!--Justify-->
                             <RibbonMenuButton Grid.Column="4" SmallImageSource="icon/LineAndParagraphSpacing.png" >           <!--Line and Paragraph Spacing-->
                                 <RibbonMenuItem Header="1.0"/>
                                 <RibbonMenuItem Header="1.15"/>
@@ -345,8 +346,8 @@
                                 </UniformGrid>
                                 <RibbonMenuItem Header="No Color"/>   <!--No Color-->
                                 <RibbonMenuItem Header="More Color..."/>   <!--More Color-->
-                            </RibbonSplitButton> 
-                            <RibbonSplitButton Grid.Column="6" SmallImageSource="icon/border bottom.png">        <!--Borders-->
+                            </RibbonSplitButton>
+                            <RibbonSplitButton Grid.Column="6" SmallImageSource="icon/border bottom.png" IsCheckable="True">        <!--Borders-->
                                 <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Bottom Border"/>    <!--Bottom Border-->
                                 <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Top Border"/>       <!--Top Border-->
                                 <RibbonMenuItem ImageSource="icon/border bottom.png" Header="Left Border"/>      <!--Left Border-->
