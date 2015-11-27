@@ -236,7 +236,6 @@
     <Resource Include="icon\select_recipients.PNG" />
     <Resource Include="icon\send_backward.PNG" />
     <Resource Include="icon\Shading.png" />
-    <Resource Include="icon\shapes.png" />
     <Resource Include="icon\show_markup.PNG" />
     <Resource Include="icon\show_note.PNG" />
     <Resource Include="icon\shrinkfont.png" />
@@ -344,6 +343,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\onlinevideo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\shapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\onlinepicture.png" />
+    <Resource Include="icon\picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

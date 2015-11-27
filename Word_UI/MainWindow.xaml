@@ -366,18 +366,14 @@
                         </Grid>
                     </Grid>                    
                 </RibbonGroup>
-                <!--============================================-->
+                <!--========================================================-->
                 <RibbonGroup Header="Styles">
-                    <!--<Grid Width="200" Height="70">-->
-                        <UniformGrid Columns="6" Rows="3" Height="70">
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading1.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading2.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Heading3.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/Intense.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/IntenseRef.png"></RibbonButton>  <!---->
-                        <RibbonButton Width="60" Height="60" LargeImageSource="icon/style.png"></RibbonButton>  <!---->
-                    </UniformGrid>
-                    <!--</Grid>-->
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/Heading1.png"></RibbonRadioButton>  
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/Heading2.png"></RibbonRadioButton>  
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/Heading3.png"></RibbonRadioButton>  
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/Intense.png"></RibbonRadioButton>  
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/IntenseRef.png"></RibbonRadioButton>  
+                    <RibbonRadioButton Width="60" Height="60" LargeImageSource="icon/style.png"></RibbonRadioButton>  
                 </RibbonGroup>
                 <!--========================================================-->
                 <RibbonGroup Header="Editing">
@@ -415,8 +411,8 @@
                     </RibbonMenuButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Illustrations">
-                    <RibbonButton LargeImageSource="icon/Pictures.png" Label="Pictures"></RibbonButton>                 <!--Pictures-->
-                    <RibbonButton LargeImageSource="icon/Pictures.png" Label="Online Pictures"></RibbonButton>          <!--Online Pictures-->
+                    <RibbonButton LargeImageSource="icon/picture.png" Label="Pictures"></RibbonButton>                 <!--Pictures-->
+                    <RibbonButton LargeImageSource="icon/onlinepicture.png" Label="Online Pictures"></RibbonButton>          <!--Online Pictures-->
                     <RibbonMenuButton LargeImageSource="icon/shapes.png" Label="Shapes">                              <!--Shapes-->
                         <RibbonMenuItem ImageSource="icon/shapes.png" Header="Recently Used Shaped"/>                 <!--Recently Used Shaped-->
                         <RibbonMenuItem ImageSource="icon/shapes.png" Header="Line"/>                                 <!--Line-->
@@ -457,7 +453,7 @@
                     </Grid>
                 </RibbonGroup>
                 <RibbonGroup Header="Media" LargeImageSource="icon/Word.png">
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Online Video"></RibbonButton>                   <!--Online Video-->
+                    <RibbonButton LargeImageSource="icon/onlinevideo.png" Label="Online Video"></RibbonButton>                   <!--Online Video-->
                 </RibbonGroup>
                 <RibbonGroup Header="Links">
                     <RibbonButton SmallImageSource="icon/Hyperlink.png" LargeImageSource="icon/Hyperlink.png" Label="Hyperlink"></RibbonButton>                        <!--Hyperlink-->
@@ -750,7 +746,7 @@
                         <RibbonMenuItem ImageSource="icon/select_recipients.png"  Header="Use an Existing List"></RibbonMenuItem>  <!---->
                         <RibbonMenuItem ImageSource="icon/select_recipients.png"  Header="Choose from Outlook Contact..."></RibbonMenuItem>  <!---->
                     </RibbonMenuButton>
-                    <RibbonButton LargeImageSource="icon/Word.png" Label="Edit Recipient List"></RibbonButton>
+                    <RibbonButton LargeImageSource="icon/edit_recipients_list.png" Label="Edit Recipient List"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup Header="Write and Insert Fields">
                     <RibbonButton LargeImageSource="icon/edit_recipients_list.png" Label="Highlight Merge Field"></RibbonButton>
